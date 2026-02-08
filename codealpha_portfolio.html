@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<style>
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:Arial;}
+
+nav{
+  position:sticky;
+  top:0;
+  background:#000;
+  padding:10px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+}
+
+section{
+  padding:60px;
+  text-align:center;
+}
+
+.projects{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.card{
+  background:#eee;
+  padding:20px;
+  width:200px;
+  transition:transform 0.3s;
+}
+.card:hover{transform:scale(1.05);}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h1>Hi, I'm Gopika</h1>
+  <p>Frontend Developer | HTML | CSS | JavaScript</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">Calculator</div>
+    <div class="card">Music Player</div>
+    <div class="card">Image Gallery</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: example@gmail.com</p>
+</section>
+
+</body>
+</html>
